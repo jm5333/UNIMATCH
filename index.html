@@ -1,156 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMatch - Find Love Where You Live, Study, and Dream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s forwards;
+        }
+        .button {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #5a4bd3;
+        }
+        .features ul, .steps ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li, .steps li {
+            background: #f1f1f1;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        footer {
+            background-color: #eee;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeUp {
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;UniMatch - Find Love Where You Live, Study, and Dream&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #6c5ce7;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 2s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1000px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(20px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeUp 1s forwards;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #6c5ce7;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #5a4bd3;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.features ul, .steps ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style-type: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.features li, .steps li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #f1f1f1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #eee;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>from {opacity: 0;}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to {opacity: 1;}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeUp {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to {opacity: 1; transform: translateY(0);}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;UniMatch&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Find Love Where You Live, Study, and Dream.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="button" href="#download"&gt;Download UniMatch&lt;/a&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="features"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Why UniMatch?&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Exclusive to your university community&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Inclusive for all students, regardless of ability&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Safe, verified, and respectful environment&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Free forever - no ads, no gimmicks&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="steps"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;How It Works&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;1. Verify with your campus email&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;2. Set up your profile with interests and preferences&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;3. Match with real students from your university&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;4. Meet up, hang out, fall in love&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="screenshots"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Preview UniMatch&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;[Screenshots Carousel Placeholder]&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="safety"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Our Promise&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;At UniMatch, we put respect and safety first. All users must follow our Student Safety Charter. Accessibility features are built in from the ground up.&lt;/p&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section id="download" style="text-align: center;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Get Started Today!&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="button" href="#"&gt;Download for iOS&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="button" href="#" style="background-color: #0984e3;"&gt;Download for Android&lt;/a&gt;</p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&amp;copy; 2025 UniMatch. All rights reserved.&lt;/p&gt;</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">// Animate sections on scroll</p>
-<p class="p1">const sections = document.querySelectorAll('section');</p>
-<p class="p1">const options = { threshold: 0.3 };</p>
-<p class="p2"><br></p>
-<p class="p1">const observer = new IntersectionObserver(function(entries, observer) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>entries.forEach(entry =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (!entry.isIntersecting) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>entry.target.style.animation = 'fadeUp 1s forwards';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>observer.unobserve(entry.target);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>});</p>
-<p class="p1">}, options);</p>
-<p class="p2"><br></p>
-<p class="p1">sections.forEach(section =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>observer.observe(section);</p>
-<p class="p1">});</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+    <h1>UniMatch</h1>
+    <p>Find Love Where You Live, Study, and Dream.</p>
+    <a class="button" href="#download">Download UniMatch</a>
+</header>
+
+<section class="features">
+    <h2>Why UniMatch?</h2>
+    <ul>
+        <li>Exclusive to your university community</li>
+        <li>Inclusive for all students, regardless of ability</li>
+        <li>Safe, verified, and respectful environment</li>
+        <li>Free forever - no ads, no gimmicks</li>
+    </ul>
+</section>
+
+<section class="steps">
+    <h2>How It Works</h2>
+    <ul>
+        <li>1. Verify with your campus email</li>
+        <li>2. Set up your profile with interests and preferences</li>
+        <li>3. Match with real students from your university</li>
+        <li>4. Meet up, hang out, fall in love</li>
+    </ul>
+</section>
+
+<section class="screenshots">
+    <h2>Preview UniMatch</h2>
+    <p>[Screenshots Carousel Placeholder]</p>
+</section>
+
+<section class="safety">
+    <h2>Our Promise</h2>
+    <p>At UniMatch, we put respect and safety first. All users must follow our Student Safety Charter. Accessibility features are built in from the ground up.</p>
+</section>
+
+<section id="download" style="text-align: center;">
+    <h2>Get Started Today!</h2>
+    <a class="button" href="#">Download for iOS</a>
+    <a class="button" href="#" style="background-color: #0984e3;">Download for Android</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 UniMatch. All rights reserved.</p>
+</footer>
+
+<script>
+// Animate sections on scroll
+const sections = document.querySelectorAll('section');
+const options = { threshold: 0.3 };
+
+const observer = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.style.animation = 'fadeUp 1s forwards';
+    observer.unobserve(entry.target);
+  });
+}, options);
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+
 </body>
 </html>
